@@ -39,7 +39,7 @@
         background-size: cover;
         background-position: bottom;
         overflow: hidden;
-        z-index: 100;
+        z-index: 10;
         }
 
       .text {
@@ -88,6 +88,12 @@
         background-color: transparent;
       }
 
+      .top {
+        z-index: 2000;
+        position: relative;
+        font-size: 36px;
+      }
+
       a:link, 
       a:visited, 
       a:hover, 
@@ -95,14 +101,16 @@
         color: black;
       }
 
+      .img-container {
+        overflow: hidden;
+      }
+
       img {
-        width: 80vh;
-        padding: 5px;
+        height: 450px;
         display: block;
         margin-left: auto;
         margin-right: auto;
         mix-blend-mode: multiply;
-
       }
 
   }
@@ -127,7 +135,7 @@
         background-size: cover;
         background-position: center;
         overflow: hidden;
-        pointer-events: none;
+
     }
 
       #textweb {
@@ -174,24 +182,15 @@ ORLANDO: I must attend the Duke at dinner. By two o’clock I will be thee again
 <p>But the narratives of work are becoming glitchy. The rhetorical figure of the leaving worker is nowhere to find: we don’t leave work, we don’t always share a workplace with our colleagues, and comprehensive, grand narratives are incapable of representing the intricate reality and complexity that face us, leaving everyone to their own fragile, composite narrative. How can we emphasize the collective consciousness and a solidarian identity as workers when we enter and exit alone?</p>
 
 <p>Historically, for at least the past millennium, the forest was seen as a common space belonging to all–not the village, and not wilderness but a threshold that could not be divided into individual holdings. <span class="underline">The Forest of All-Day is a temporary metaphorical ‘factory gate’ or a Forest of Arden where we enter and exit together, whatever time the o’clock say.</span></p>
-<p onclick="window.location.href=('index.html')">←</p>
-</div>
-<img src="people.png">
-<!-- <div class="buffer"></div> -->
+<div class="top" onclick="location.href='index.html';">←</div>
+</div></div>
+
+<div class="img-container"><img src="people.png"></div>
+
 
     </div>
   </body>
   <script>
-
-  document.addEventListener("click", start);
-
- 
-  function start() {
-    if(screen.width < 720){
-    window.location.href = "compass.html";
-    }
-    }
-
 
 
   </script>
