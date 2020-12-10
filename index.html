@@ -6,7 +6,7 @@
                                  maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-    <title>Sweeping the Circle of Projection</title>
+    <title>the Forest of All-Day</title>
     <style>
 
 @media screen and (max-width: 600px) { 
@@ -21,18 +21,15 @@
       }
 
       body {
-        display: flex;
-        flex-direction: column;
         height: 100vh;
         width: 100vw;
         background-color: black;
         position: relative;
-        box-sizing: border-box;
       }
 
-      #bg {
-        background-image: url("bg-front3.png");
-        position: fixed;
+      .bg {
+        background-image: url("bg.jpg");
+        position: absolute;
         left: 0;
         right: 0;
         bottom: 0;
@@ -41,13 +38,50 @@
         width: 100vw;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: bottom;
+        background-position: top;
         overflow: hidden;
-    }
+        }
+
+      .text {
+        font-family: 'Monotone', sans-serif;
+        font-size: 24px; 
+        letter-spacing: 1px;    
+      }
+      .text-headline {
+        text-align: center;
+        padding: 40px 0;
+      }
+
+      .text-body {
+        padding: 0 20px;
+        text-decoration: underline;
+      }
+
+      .text-body p {
+        margin: 15px 0;
+      }
+
+      .text-bottom {
+        color: white;
+        text-decoration: underline;
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
 
       #textweb {
         display: none;
       }
+
+      a:link, 
+      a:visited, 
+      a:hover, 
+      a:active {
+        color: black;
+      }
+
   }
 
 @media screen and (min-width: 600px) { 
@@ -59,13 +93,13 @@
       }
 
       #bg {
-        background-image: url("bg-web4.png");
+        background-image: url("bg.png");
         position: fixed;
         left: 0;
         right: 0;
         bottom: 0;
         top: 0;
-        width: 100%;
+        height: 100%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -84,12 +118,24 @@
       }
     }
 
+      @font-face {
+          font-family: 'Monotone';
+          src:  url('Monotone.woff2') format('woff2');
+      }
+
     </style>
   </head>
 
   <body>
-    <div id="bg">
-    <div id="textweb">Background Image: Detail of "Cleaning-Woman" by Francois Bonvin, 1817–1887</div>
+    <div class="bg">
+      <div class="text">
+      <div class="text-headline">The Forest of All-Day<br>+1 (620) 374-8507</div>
+      <div class="text-body">
+        <p><a href="sms:+16203748507&body=ENTER">Text to Enter</a></p>
+        <p><a href="sms:+16203748507&body=EXIT">Text to Exit</a></p></div>
+        <div class="text-bottom">Epilogue</div>
+      </div>
+    </div>
   </body>
   <script>
 
