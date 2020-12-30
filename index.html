@@ -48,7 +48,7 @@
 
       .text-mob {
         font-family: 'Monotone', sans-serif;
-        font-size: 24px; 
+        font-size: 22px; 
         letter-spacing: 1px;  
         position: relative;
         z-index: 10000;  
@@ -60,11 +60,14 @@
 
       .text-body {
         padding: 0 20px;
-        text-decoration: underline;
       }
 
       .text-body p {
         margin: 15px 0;
+      }
+
+      .mobile {
+        text-decoration: none;
       }
 
       .text-bottom {
@@ -194,6 +197,9 @@
         color: black;
         cursor: crosshair;
       }
+      .mobile {
+        display: none;
+      }
 
       #text-container {
         z-index: 500;
@@ -255,9 +261,10 @@ img {
   <body>
     <div class="bg"></div>
       <div class="text-mob">
-      <div class="text-headline">The Forest of All-Day<br>+1 (620) 374-8507</div>
+      <div class="text-headline">The Forest of All-Day</div>
       <div class="text-body">
-        <p><a href="sms:+16203748507&body=ENTER">Click and send 'Enter' to play As You Like It–<i>As You Like it!</i></a></p>
+        <p style="text-decoration: underline;"><a href="sms:+16203748507&body=ENTER">Click and send 'Enter' to play As You Like It–<i>As You Like it!</i></a></p>
+        <p class="mobile">(If your messaging service doesn't open automatically, manually text 'Enter' to +1 (620) 374-8507)
         <p class="text-bottom-web">(If your webbrowser isn't connected to a messaging service manually text 'Enter' to +1 (620) 374-8507)</p>
       </div></div>
         <div class="text-bottom" onclick="start();">Prologue</div></div>
